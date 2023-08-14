@@ -60,8 +60,7 @@ class TgUpdate(Update):
     def dict(self) -> dict:
         """Словарь.
 
-        TODO: возможно стоит возвращать валидированный dict:
-            return self.parsed().dict()
+        # @todo #360:30min возможно стоит возвращать валидированный dict: return self.parsed().dict()
 
         :return: dict
         """
