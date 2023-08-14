@@ -47,5 +47,5 @@ class FavoriteAyatEmptySafeAnswer(TgAnswer):
         """
         try:
             return await self._origin.build(update)
-        except IndexError:  # @todo #360:30min
+        except IndexError:  # TODO #360:30min
             return await self._error_answer.build(update)
