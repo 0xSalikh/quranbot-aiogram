@@ -102,7 +102,7 @@ class QuranbotAnswer(TgAnswer):
 
     def _pre_build(self) -> None:
         empty_answer = TgEmptyAnswer(settings.API_TOKEN)
-        # @todo #360:30min перенести сборку этих классов в хендлеры
+        # @todo #360 Перенести сборку объектов в хэндлеры
         answer_to_sender = TgAnswerToSender(TgMessageAnswer(empty_answer))
         audio_to_sender = TgAnswerToSender(TgAudioAnswer(empty_answer))
         html_to_sender = TgAnswerToSender(
