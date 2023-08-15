@@ -48,7 +48,7 @@ class TgChatIdAnswer(TgAnswer):
         return [
             httpx.Request(
                 request.method,
-                request.url.copy_add_param('chat_id', self._chat_id),
+                request.url.copy_add_param('chat_id', int(self._chat_id)),
                 stream=request.stream,
                 headers=request.headers,
             )
