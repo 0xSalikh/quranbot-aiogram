@@ -143,6 +143,7 @@ class PollingUpdatesIterator(UpdatesIteratorInterface):
         """Вернуть следующий элемент.
 
         # TODO #360:30min мы парсим json, потом обратно перегоняем его в строку.
+        #  Проверить насколько это вредит производительности
 
         :return: list[Update]
         """
